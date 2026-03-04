@@ -12,8 +12,10 @@
     box-sizing: border-box;
 }
 
+/* --- Global Styles --- */
 body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /* Updated to Montserrat */
+    font-family: 'Montserrat', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
     line-height: 1.6;
@@ -34,11 +36,14 @@ body {
     z-index: 100;
 }
 
+
 .logo {
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 700; /* Use the bold weight from Montserrat */
     letter-spacing: -1px;
-    z-index: 101; /* Stays above mobile menu */
+    z-index: 101; 
+    text-decoration: none; /* Removes the default link underline */
+    color: var(--text-color); /* Keeps it black instead of default link blue */
 }
 
 .nav-links {
@@ -440,6 +445,10 @@ footer h2 {
     cursor: pointer;
     z-index: 10;
     transition: transform 0.3s ease;
+}
+
+section, footer {
+    scroll-margin-top: 120px; 
 }
 
 @media (max-width: 899px) {
