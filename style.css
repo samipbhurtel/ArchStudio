@@ -12,6 +12,11 @@
     box-sizing: border-box;
 }
 
+/* 1. Add Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
 /* --- Global Styles --- */
 body {
     /* Updated to Montserrat */
@@ -27,7 +32,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2rem 5%;
+    padding: 1.2rem 5%; /* Reduced padding from 2rem to save vertical space */
     position: fixed;
     width: 100%;
     top: 0;
@@ -35,7 +40,6 @@ body {
     backdrop-filter: blur(10px);
     z-index: 100;
 }
-
 
 .logo {
     font-size: 1.5rem;
@@ -79,6 +83,10 @@ body {
     margin: 6px auto;
     background-color: var(--text-color);
     transition: all 0.3s ease-in-out;
+}
+
+section, footer {
+    scroll-margin-top: 80px; /* Reduced from 120px */
 }
 
 @media (max-width: 768px) {
@@ -192,12 +200,12 @@ body {
 
 /* --- Portfolio Section --- */
 .portfolio {
-    padding: 5rem 5%;
+    padding: 3rem 5% 5rem; /* Reduced top padding from 5rem to 3rem */
 }
 
 .section-title {
     font-size: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem; /* Reduced bottom margin from 3rem to 1.5rem */
 }
 
 .portfolio-grid {
@@ -263,6 +271,8 @@ footer h2 {
     font-size: clamp(2rem, 5vw, 3rem);
     margin-bottom: 2rem;
 }
+
+
 
 .contact-btn {
     display: inline-block;
@@ -447,9 +457,7 @@ footer h2 {
     transition: transform 0.3s ease;
 }
 
-section, footer {
-    scroll-margin-top: 120px; 
-}
+
 
 @media (max-width: 899px) {
     .close-modal {
