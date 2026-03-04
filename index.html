@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArchStudio | Modern Architecture</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">ArchStudio.</div>
+        
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        
+        <div class="hero-content animate-on-scroll">
+            <h1>Designing Tomorrow.</h1>
+            <p>Creating spaces that inspire, function, and endure.</p>
+        </div>
+    </header>
+
+    <section id="about" class="about">
+        <div class="about-text animate-on-scroll">
+            <h2>Our Philosophy</h2>
+            <p>We believe architecture is the harmonious intersection of art and engineering. Our designs are rooted in sustainability, contextual awareness, and minimalist elegance.</p>
+        </div>
+    </section>
+
+    <section id="portfolio" class="portfolio">
+        <h2 class="section-title animate-on-scroll">Selected Works</h2>
+        
+        <div class="portfolio-grid">
+            
+            <div class="portfolio-item animate-on-scroll" 
+                 data-title="Villa Nova" 
+                 data-category="Residential / 2025"
+                 data-images='[
+                    "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1200&q=80",
+                    "https://images.unsplash.com/photo-1600607687931-cebf0049f508?auto=format&fit=crop&w=1200&q=80",
+                    "https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=1200&q=80"
+                 ]'
+                 data-description="Nestled in the hillside, Villa Nova is a breathtaking residential project focused on blending indoor and outdoor living spaces. Featuring floor-to-ceiling glass, raw concrete, and sustainable timber, the structure acts as a natural extension of its environment.">
+                
+                <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80" alt="Villa Nova">
+                <div class="portfolio-overlay">
+                    <h3>Villa Nova</h3>
+                    <p>Residential / 2025</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item animate-on-scroll" style="transition-delay: 0.2s;"
+                 data-title="The Glass Apex" 
+                 data-category="Commercial / 2024"
+                 data-images='[
+                    "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
+                    "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1200&q=80"
+                 ]'
+                 data-description="A striking addition to the city skyline, The Glass Apex utilizes geometric precision to maximize natural light while minimizing solar heat gain. This commercial hub redefines the modern workspace.">
+                
+                <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80" alt="The Glass Apex">
+                <div class="portfolio-overlay">
+                    <h3>The Glass Apex</h3>
+                    <p>Commercial / 2024</p>
+                </div>
+            </div>
+
+            <div class="portfolio-item animate-on-scroll" style="transition-delay: 0.4s;"
+                 data-title="Echo Pavilion" 
+                 data-category="Cultural / 2023"
+                 data-images='[
+                    "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80",
+                    "https://images.unsplash.com/photo-1506158669146-619067262a00?auto=format&fit=crop&w=1200&q=80"
+                 ]'
+                 data-description="Designed as a community gathering space, Echo Pavilion explores acoustic architecture. Its sweeping curves and hollowed structures create a naturally amplified environment for live performances.">
+                
+                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80" alt="Echo Pavilion">
+                <div class="portfolio-overlay">
+                    <h3>Echo Pavilion</h3>
+                    <p>Cultural / 2023</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="contact" class="animate-on-scroll">
+        <h2>Let's build something together.</h2>
+        <a href="mailto:hello@archstudio.com" class="contact-btn">hello@archstudio.com</a>
+        <p class="copyright">© 2026 ArchStudio. All rights reserved.</p>
+    </footer>
+
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <div class="modal-layout">
+                
+                <div class="modal-image-container">
+                    <button class="carousel-btn prev" aria-label="Previous Image">&#10094;</button>
+                    <img id="modal-img" src="" alt="Project Image">
+                    <button class="carousel-btn next" aria-label="Next Image">&#10095;</button>
+                </div>
+                
+                <div class="modal-text">
+                    <h2 id="modal-title">Project Title</h2>
+                    <p id="modal-category" class="modal-meta">Category / Year</p>
+                    <div class="modal-divider"></div>
+                    <p id="modal-description">Project description goes here.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
